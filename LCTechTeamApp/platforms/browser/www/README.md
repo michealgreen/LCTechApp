@@ -1,160 +1,138 @@
-# Onsen UI - HTML5 Hybrid Mobile App Framework
+# [Flat UI Free](http://designmodo.github.io/Flat-UI/)
 
-[![Join us on Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OnsenUI/OnsenUI)
-[![Forum](https://img.shields.io/badge/forum-onsen--ui-FF412D.svg )](https://community.onsen.io/)
-[![TypeScript definitions on DefinitelyTyped](http://definitelytyped.org/badges/standard.svg)](https://github.com/OnsenUI/OnsenUI/blob/master/core/src/onsenui.d.ts)
-[![Circle CI](https://circleci.com/gh/OnsenUI/OnsenUI.svg?style=shield)](https://circleci.com/gh/OnsenUI/OnsenUI) 
-[![Coverage Status](https://coveralls.io/repos/OnsenUI/OnsenUI/badge.svg?branch=master&service=github)](https://coveralls.io/github/OnsenUI/OnsenUI?branch=master)
-[![npm version](https://badge.fury.io/js/onsenui.svg)](https://badge.fury.io/js/onsenui)
+[![Join the chat at https://gitter.im/designmodo/Flat-UI](https://badges.gitter.im/designmodo/Flat-UI.svg)](https://gitter.im/designmodo/Flat-UI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-The best place to start with Onsen UI is our [Getting Started](http://onsen.io/guide/getting_started.html) page.
+Flat UI is a beautiful theme for [Bootstrap](http://getbootstrap.com). We have redesigned many of its components to look flat in every pixel.
 
-**We just released the RC of Onsen UI 2. The new version includes Material Design, React components, Angular 2 components and much more. Check out all the new features [here](https://onsen.io/2/)!**
+To get started, check out [getting started page](http://designmodo.github.io/Flat-UI/docs/getting-started.html) or follow instructions below.
 
-Onsen UI is:
 
-* **Open source**, free and open for all. It's designed and implemented to deliver unprecedented user interface and user experience for your mobile and hybrid apps. Onsen UI is built on top of Web Components so applications can be built using **HTML tags** web developers already know and love.
+## Links:
 
-* **Framework agnostic**. This means that it can be used with whatever front-end framework you prefer. However, it also provides a binding library for [**Angular 1 & 2**](https://angularjs.org/) which makes it easy to integrate our custom tags with these frameworks. [**React Components** for Onsen UI](https://onsen.io/react) are also available and they play really well with React tooling such as [React Hot Loader](https://github.com/gaearon/react-hot-loader), [Redux](https://github.com/reactjs/redux) or [MobX](https://github.com/mobxjs/mobx).
++ [Demo Page](http://designmodo.github.io/Flat-UI/)
++ [Download PSD](http://designmodo.com/flat-free/) (for designers)
++ [Flat UI Pro 1.3.2](http://designmodo.com/flat/) (from $39)
 
-* Completely integrated with Monaca kit, a complete set of tools that makes PhoneGap/Cordova development super simple. **Monaca CLI** provides **Onsen UI templates, device debugger, remote building** and any service you might need directly from your terminal. We also have [GUI and cloud alternatives](https://monaca.io/) if you prefer that over CLI.
 
-* Beautifully made with **flat (iOS) and Material Design (Android)** flavors. It automatically styles your app depending on the platform and gives you control to customize it. Check out our [*Automatic Styling*](https://onsen.io/blog/auto-style-app-onsen/) in action. It also includes [Onsen CSS Components](http://components2.onsen.io/), a free resource of UI templates with "**theme roller**" functionality. Developers can pick and choose, grab the code they need, and they're off and running. And they can create their own templates and submit to Onsen UI to be included with other templates available.
+## Quick start
 
-* [**Fully documented**](https://onsen.io/v2/docs/js.html). And if you want even more, we provide an [**Interactive Tutorial**](http://tutorial.onsen.io) where you can try and modify examples, export your code online and even generate Cordova projects.
+Three quick start options are available:
 
-* Community based. Check out our [**blog**](https://onsen.io/blog/), [**forum**](https://community.onsen.io/) and [**chat**](https://gitter.im/OnsenUI/OnsenUI) to get the latest updates and directly contact the dev team. We are always very active answering questions so you don't get stuck with your apps.
+- [Download the latest release](https://github.com/designmodo/Flat-UI/archive/2.3.0.zip).
+- Clone the repo: `git clone https://github.com/designmodo/Flat-UI.git`.
+- Install with [Bower](http://bower.io): `bower install flat-ui`.
 
-## Browser Support
+Run `npm install` and `bower install` to install dependencies.
 
-Onsen UI is tested with the following browsers and mobile OS.
+Read the [getting started page](http://designmodo.github.io/Flat-UI/docs/getting-started.html) for information on the framework contents.
 
- * Android 4.1+
- * iOS8+
- * Windows Phone 10+
- * Google Chrome
- * Safari
+Examples: <https://github.com/designmodo/Flat-UI/tree/master/docs/examples>.
 
-## Demo
 
-[Click here](https://frankdiox.github.io/frame-auto-style/example.html) to see Onsen UI in action! Check our [tutorial](http://tutorial.onsen.io/) for more examples.
+### What's included
 
-## What's Included
-
-* [Material Design](http://www.google.co.jp/design/spec/material-design/introduction.html): For Native-like Android UI
-* [Web Components](http://webcomponents.org/): for Custom Elements
-* [AngularJS module](https://angularjs.org/): bindings are backwards compatible with Onsen UI 1
-* [Angular 2 components](https://angular.io/): components for Angular 2
-* [React components](https://facebook.github.io/react/): components for React
-
-## Getting Started Using Templates
-
-See the [Onsen UI Getting Started](http://onsen.io/getting_started/) page. We provide project templates for you in the [`project-templates`](https://github.com/OnsenUI/project-templates) repository. You will see the instruction on how to run the project there.
-For Visual Studio developers we provide directly provide [Onsen UI extension](https://taco.visualstudio.com/en-us/docs/tutorial-onsen).
-
-## Getting Started Using Monaca
-
-[Monaca](https://monaca.io/) is a set of tools that makes hybrid mobile app development with PhoneGap/Cordova simple and easy: debugging suite, push notifications, remote build, back-end, encryption, version control and more. See the [Onsen UI Getting Started Page](http://onsen.io/getting_started/) for more information.
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
-$ [sudo] npm -g install monaca
-$ monaca create helloworld # And choose the starter template
-$ cd helloworld # Switch to the directory
-$ monaca preview # Preview on the browser
-$ monaca debug # Preview on the real device
+flat-ui/
+├── dist/
+|   ├── css/
+|   |   ├── vendors/
+│   |   ├── flat-ui.css
+│   |   └── flat-ui.min.css
+|   ├── js/
+|   |   ├── vendors/
+│   |   ├── flat-ui.js
+│   |   └── flat-ui.min.js
+|   ├── fonts/
+|   |   ├── lato/
+|   |   └── glyphicons/
+|   |        ├── flat-ui-icons-regular.eot
+|   |        ├── flat-ui-icons-regular.svg
+|   |        ├── flat-ui-icons-regular.ttf
+|   |        ├── flat-ui-icons-regular.woff
+|   |        └── selection.json
+|   ├── img/
+|   └── index.html
+├── docs/
+|   ├── examples/
+|   ├── components.html
+|   ├── getting-started.html
+|   └── template.html
+├── fonts/
+|   ├── glyphicons/
+|   └── lato/
+├── img/
+├── js/
+└── less/
+    ├── mixins/
+    ├── modules/
+    ├── flat-ui.less
+    ├── mixins.less
+    └── variables.less
+
 ```
 
-## Download Onsen UI
+We provide compiled CSS and JS (`flat-ui.*`), as well as compiled and minified CSS and JS (`flat-ui.min.*`). Fonts with icons are included.
 
-The distribution repository is located [here](https://github.com/OnsenUI/OnsenUI-dist). React Components for Onsen UI are distributed separately in [this other repo](https://github.com/OnsenUI/react-onsenui).
 
-Onsen UI is available with npm, bower or jspm. Example:
+## Documentation
 
-```bash
-$ npm install onsenui
-```
+Flat UI's documentation, included in this repo in the docs directory and publicly hosted on GitHub Pages at <http://designmodo.github.io/Flat-UI/docs/components.html>.
 
-For React:
 
-```bash
-$ npm install react-onsenui
-```
+## SASS support
 
-For an example that uses React, Redux and Webpack you can check out our [Weather app sample](https://github.com/argelius/react-onsenui-redux-weather). Try the [demo here](http://argelius.github.io/react-onsenui-redux-weather/demo.html).
+If you are interested in SASS source files - you can visit this project made by @wingrunr21: 
+[Designmodo's Flat-UI ported to SASS with support for Flat-UI Pro](https://github.com/wingrunr21/flat-ui-sass)
 
-For Angular2:
 
-```bash
-$ npm install angular2-onsenui
-```
+## Authors
 
-## Download the latest build
+**Sergey Shmidt**
 
-A new build is generated every time the code changes. It can be downloaded on [this page](http://onsen.io/download.html#latest-build).
++ <http://shmidt.in>
++ <http://twitter.com/monstercritic>
 
-Please use this with caution. However, we are very grateful if people try it out so we can find bugs and things to improve before the sharp releases.
+**Sergii Iurevych**
 
-## How to manually build this project
++ <http://twitter.com/iurevych>
++ <http://github.com/iurevych>
 
-Clone this repository and run the following commands to build the project:
+**Dmitry Pytkin**
 
-```bash
-$ npm install
-$ gulp build
-```
++ <http://twitter.com/pytkin>
++ <http://github.com/pytkin>
 
-The files will be built and copied into **build** folder.
 
-## Running Examples
+## Copyright and license
 
-```bash
-$ gulp serve
-```
+Flat UI Free is licensed under a Creative Commons Attribution 3.0 Unported (CC BY 3.0)  (http://creativecommons.org/licenses/by/3.0/) and MIT License - http://opensource.org/licenses/mit-license.html.
 
-* Then navigate your browser to [http://0.0.0.0:3000/examples/index.html](http://0.0.0.0:3000/examples/index.html)
+You are allowed to use these elements anywhere you want, however we’ll highly appreciate if you will link to our [website](http://designmodo.com).
 
-## Running the test suite
+## Typeface
 
-Onsen UI has unit tests for the Web Components as well as end-to-end testing of the AngularJS directives using Protractor.
+Flat UI Free is made using the Lato typeface, which can be downloaded for free here: http://www.google.com/webfonts/specimen/Lato
 
-Use the following commands to run the unit tests:
+## Useful Links (How To)
 
-```bash
-$ npm install
-$ gulp core-test
-```
+More products from Designmodo: <http://designmodo.com/shop/>
 
-or these commands for the protractor tests:
+Designmodo Market: <http://market.designmodo.com/>
 
-```bash
-$ npm install
-$ gulp e2e-test
-```
+Tutorials: <http://designmodo.com/tutorials/>
 
-It will take some time the because it will download a stand-alone Selenium Server and a Chrome webdriver the first time it's executed.
+Freebies: <http://designmodo.com/freebies/>
 
-To run a single test or a group of tests use the `--specs` parameter and provide a comma-separated list of spec files:
+Affiliate Program (earn money): <http://designmodo.com/affiliates/>
 
-```bash
-$ gulp e2e-test --specs test/e2e/lazyRepeat/scenarios.js
-```
+Social Media:
 
-In order to run both the unit tests and the end-to-end tests use the following command:
+Twitter: <http://www.twitter.com/designmodo>
 
-```bash
-$ gulp test
-```
+Facebook: <http://www.facebook.com/designmodo>
 
-## How to contribute
+RSS: <http://feeds.feedburner.com/designmodo>
 
-Please see our [document on contributing](https://github.com/OnsenUI/OnsenUI/blob/master/CONTRIBUTING.md). See the full list of contributors [here](https://github.com/OnsenUI/OnsenUI/blob/master/CONTRIBUTORS.md).
-
-## Getting support
-
-If anything about Onsen UI is unclear, please ask a question on our [community forum](https://community.onsen.io/) or <a href="http://stackoverflow.com" target="_blank">Stackoverflow</a> and tag it "onsen-ui".
-
-You can also join our [Gitter channel](https://gitter.im/OnsenUI/OnsenUI) if you want to talk directly to the dev team.
-
-If you have any requests or comments regarding the development of Onsen UI, please feel free to direct them to the Twitter account (<a href="http://twitter.com/Onsen_UI" target="_blank">@Onsen_UI</a>).
-
-[Onsen UI](https://onsen.io/) - [Monaca](http://monaca.io/)
+Google+: <https://www.google.com/+DesignModo>
